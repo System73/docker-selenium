@@ -46,7 +46,7 @@ RUN echo "${TZ}" > /etc/timezone \
 RUN useradd seluser \
          --shell /bin/bash  \
          --create-home \
-  && usermod -a -G sudo seluser \
+  && usermod -a -G sudo,audio,video seluser \
   && echo 'ALL ALL = (ALL) NOPASSWD: ALL' >> /etc/sudoers \
   && echo 'seluser:secret' | chpasswd
 ENV HOME=/home/seluser
