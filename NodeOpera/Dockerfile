@@ -2,11 +2,10 @@
 # NOTE: DO *NOT* EDIT THIS FILE.  IT IS GENERATED.
 # PLEASE UPDATE Dockerfile.txt INSTEAD OF THIS FILE
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-FROM selenium/node-base:3.141.59-uranium
+FROM selenium/node-base:3.141.59-xenon
 LABEL authors=SeleniumHQ
 
 USER root
-
 
 #============================================
 # Opera
