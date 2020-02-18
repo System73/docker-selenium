@@ -332,7 +332,7 @@ $ docker run -d -e HUB_HOST=<hub_ip|hub_name> -e NODE_MAX_INSTANCES=5 -e NODE_MA
 
 ### Running in Headless mode
 
-Both [Firefox](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Headless_mode), [Chrome](https://developers.google.com/web/updates/2017/04/headless-chrome) and [Opera](https://forums.opera.com/topic/20375/opera-cli-switches-and-headless) support running tests in headless mode.
+[Firefox](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Headless_mode), [Chrome](https://developers.google.com/web/updates/2017/04/headless-chrome) and [Opera](https://forums.opera.com/topic/20375/opera-cli-switches-and-headless) support running tests in headless mode.
 When using headless mode, there's no need for the [Xvfb](https://en.wikipedia.org/wiki/Xvfb) server to be started.
 
 To avoid starting the server you can set the `START_XVFB` environment variable to `false` (or any other value than `true`), for example:
@@ -578,4 +578,4 @@ or
 
 `Message: unknown error: Chrome failed to start: exited abnormally`
 
-The reason _might_ be that you've set the `START_XVFB` environment variable to "false", but forgot to actually run Firefox, opera or Opera (respectively) in headless mode.
+The reason _might_ be that you've set the `START_XVFB` environment variable to "false", but forgot to actually run Firefox, Chrome or Opera (respectively) in headless mode.
